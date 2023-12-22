@@ -68,7 +68,8 @@ private struct SocketAck : Hashable {
         return lhs.ack == rhs.ack
     }
 }
-
+@objc(SocketAckManager)
+@objcMembers
 class SocketAckManager {
     private var acks = Set<SocketAck>(minimumCapacity: 1)
 
