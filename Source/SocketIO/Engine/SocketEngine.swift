@@ -724,7 +724,7 @@ open class SocketEngine: NSObject, WebSocketDelegate, URLSessionDelegate,
     }
 
     // Test Properties
-
+    @objc(_setConnected:)
     func setConnected(_ value: Bool) {
         connected = value
     }
